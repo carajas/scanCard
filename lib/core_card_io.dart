@@ -6,7 +6,7 @@ class CoreCardIo {
   static const MethodChannel _channel =
       const MethodChannel('core_card_io');
 
-  static Future<dynamic> scanCard(Map<String, dynamic> args) {
+  static Future<dynamic> scanCard(Map<dynamic, dynamic> args) {
     return _channel.invokeMethod('scanCard', args);
   }
 }

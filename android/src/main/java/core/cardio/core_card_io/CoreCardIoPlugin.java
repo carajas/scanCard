@@ -25,9 +25,6 @@ public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListen
     private Result pendingResult;
     private MethodCall methodCall;
 
-    /**
-     * Plugin registration.
-     */
     public static void registerWith(Registrar registrar) {
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "core_card_io");
         CoreCardIoPlugin instance = new CoreCardIoPlugin(registrar);
